@@ -14,8 +14,8 @@ namespace DataAccess.Concrete.EntityFramework
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //Burda diyoruz ki: Sql server kullanıcaz.
-            //@ demek: ters slaşı (\) normal slaş algıla demek.
-            //Bağlantı kuracağımız db'in bağlantısını yazıyoruz.
+            //Bağlantı kuracağımız db'nin bağlantısını yazıyoruz.
+            //Ters slaşı (\) kod olarak algılamaması, normal string değer olarak kabul etmesi için adresin başında @ kullandık.  
             optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Northwind;Trusted_Connection=true");
         }
 
