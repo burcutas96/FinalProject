@@ -15,7 +15,7 @@ namespace DataAccess.Concrete.EntityFramework
         {
             //Burda diyoruz ki: Sql server kullanıcaz.
             //@ demek: ters slaşı (\) normal slaş algıla demek.
-            //Bağlantı kuracağımız db'in bağlantısını yazıyoruz.
+            //Bağlantı kuracağımız db'nin bağlantısını yazıyoruz.
             optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Northwind;Trusted_Connection=true");
         }
 
