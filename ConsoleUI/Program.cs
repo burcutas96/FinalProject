@@ -16,6 +16,7 @@ static void CategoryTest()
     }
 } 
 
+
 static void ProductTest()
 {
     ProductManager productManager = new ProductManager(new EfProductDal());
