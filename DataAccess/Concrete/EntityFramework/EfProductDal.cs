@@ -14,6 +14,7 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class EfProductDal : EfEntityRepositoryBase<Product, NorthwindContext>, IProductDal
     {
+        //deneme
         public List<ProductDetailDto> GetProductDetails()
         {
             using (NorthwindContext context = new NorthwindContext())
@@ -25,7 +26,7 @@ namespace DataAccess.Concrete.EntityFramework
                              { 
                                  ProductId = p.ProductId, ProductName = p.ProductName, CategoryName = c.CategoryName, UnitsInStock = p.UnitsInStock 
                              };
-                return result.ToList();
+                return result.ToList(); 
             }  
         }
     }
