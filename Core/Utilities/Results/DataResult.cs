@@ -10,7 +10,7 @@ namespace Core.Utilities.Results
     {
         public DataResult(T data, bool success, string message) : base(success, message) 
         {
-            //bu constructor çalıştığında alttaki constructor'ı çalıştıramadığımız için data'yı burda set etmeliyiz.
+            //Bu constructor çalıştığında alttaki constructor'ı çalıştıramadığımız için data'yı burda da set etmeliyiz.
             Data = data;
         }
 
