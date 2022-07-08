@@ -1,6 +1,6 @@
 ﻿using Castle.DynamicProxy;
 using Core.CrossCuttingConcerns.Validation;
-using Core.Interceptors;
+using Core.Utilities.Interceptors;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 
 namespace Core.Aspects.Autofac.Validation
 {
+
+    //ValidationAspect bir interceptor ve attribute'dur.
     public class ValidationAspect : MethodInterception
     {
         private Type _validatorType;
