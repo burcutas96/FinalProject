@@ -16,7 +16,7 @@ namespace DataAccess.Concrete.EntityFramework
         {
             //Burda diyoruz ki: Sql server kullanıcaz.
             //Bağlantı kuracağımız db'nin bağlantısını yazıyoruz.
-            //Ters slaşı (\) kod olarak algılamaması, normal string değer olarak kabul etmesi için adresin başında @ kullandık.  
+            //Ters slaşı kod olarak algılamaması, normal string değer olarak kabul etmesi için adresin başında @ kullandık.  
             optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Northwind;Trusted_Connection=true");
         }
 

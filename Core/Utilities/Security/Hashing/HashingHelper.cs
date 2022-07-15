@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace Core.Utilities.Security.Hashing
 {
@@ -21,8 +17,9 @@ namespace Core.Utilities.Security.Hashing
 
 
         //Kullanıcının girdiği password'u yine yukarıdaki algoritmayı kullanarak hashleseydik karşımıza
-        //yine aynı dizin çıkar mıydı çıkmaz mıydı onu kontrol ettiğimiz metot. Yani password hashi doğrulayacağız.
+        //yine aynı dizin çıkar mıydı çıkmaz mıydı onu kontrol ettiğimiz metot. Yani password hashleri karşılaştıracağız.
         //byte[] passwordHash: veri tabanında kaydedilen hash'imiz. Bunu gelen passwordün hashi ile karşılaştıracağız. 
+        //byte[] passwordSalt: veri tabanında kaydedilen tuz değerimiz.
         public static bool VerifyPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt)
         {
             using (var hmac = new System.Security.Cryptography.HMACSHA512(passwordSalt))

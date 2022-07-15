@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Core.Utilities.Security.JWT
 {
+    //Classın adını TokenOption vermedik çünkü içerisindeki her bir property
+    //bir option'ı temsil ediyor.
     public class TokenOptions
     {
         public string Audience { get; set; }
