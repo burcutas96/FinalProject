@@ -1,9 +1,10 @@
 ﻿using Castle.DynamicProxy;
+using Core.CrossCuttingConcerns.Caching;
 using Core.Utilities.Interceptors;
 using Core.Utilities.IoC;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Core.CrossCuttingConcerns.Caching
+namespace Core.Aspects.Autofac.Caching
 {
     public class CacheRemoveAspect : MethodInterception
     {

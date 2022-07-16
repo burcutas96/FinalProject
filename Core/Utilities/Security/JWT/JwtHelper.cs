@@ -16,6 +16,7 @@ namespace Core.Utilities.Security.JWT
         public IConfiguration Configuration { get; } //Apimizdeki appsettings.json dosyamızı okumamıza yarıyor.
         private TokenOptions _tokenOptions;
         private DateTime _accessTokenExpiration; //access token ne zaman geçersizleşecek
+
         public JwtHelper(IConfiguration configuration) //configuration'ı .net kendisi veriyor.
         {
             Configuration = configuration;

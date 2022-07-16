@@ -11,8 +11,9 @@ namespace Business.Constants
 {
     public static class Messages 
     {
-        //public olan değişkenler PascalCase yazılır!
+        //public olan değişkenler PascalCase yazılır! 
         public static string ProductAdded = "Ürün Eklendi";
+        public static string ProductUpdated = "Ürün Güncellendi";
         public static string ProductNameİnvalid = "Ürün ismi geçersiz";
         public static string ProductsListed = "Ürünler listelendi";
         public static string ProductCountOfCategoryError = "Kategorideki ürün sayısını aştınız";
